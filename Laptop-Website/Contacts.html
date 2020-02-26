@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contacts.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./img/logo.svg" alt="logo" />
+        <a class="nav-link" href="index.html"
+          ><h4 class="logo">Sebi's Laptops</h4></a
+        >
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#">Specs</a></li>
+          <li><a class="nav-link" href="#">Products</a></li>
+          <li><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <img src="./img/cart.svg" alt="cart" />
+      </div>
+    </header>
+    <main>
+      <form
+        id="contact-form"
+        class="contact-form"
+        method="post"
+        action="Contacts.php"
+      >
+        <h1>Contact Us</h1>
+        <h2>Your message will be answered shortly!</h2>
+
+        <div class="text-box">
+          <label>Full Name:</label>
+          <input
+            type="text"
+            name="fullname"
+            class="form-control"
+            value=""
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+
+        <div class="text-box">
+          <label>Email Address:</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            value=""
+            placeholder="Enter Your Email Address"
+            required
+          />
+        </div>
+
+        <div class="text-box">
+          <label>Phone Number:</label>
+          <input
+            type="text"
+            name="phonenumber"
+            value=""
+            class="form-control"
+            placeholder="Enter Your Phone Number"
+            required
+          />
+        </div>
+
+        <div class="text-box">
+          <label>Subject:</label>
+          <input
+            type="subject"
+            name=""
+            value=""
+            class="form-control"
+            placeholder="Subject"
+            required
+          />
+        </div>
+
+        <div class="text-box">
+          <label>Message:</label>
+          <textarea name="message" class="form-control"></textarea>
+        </div>
+        <input type="submit" name="" class="button" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
